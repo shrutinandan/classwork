@@ -1,0 +1,18 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Driver;
+import com.mysql.jdbc.Statement;
+
+
+public class JdbcDemo {
+	public static void main(String[] args) throws ClassNotFoundException {
+		 Class.forName("com.mysql.jdbc.Driver");
+		 Connection con=DriverManager.getConnection("", "root"," password");
+		 //con.setAutoCommit(false);
+		 Statement stm = con.createStatement();
+;
+	}
+
+}

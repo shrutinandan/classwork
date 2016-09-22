@@ -1,0 +1,38 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+class MyString
+{
+	public void myList()
+	{
+		ArrayList<String> arr=new ArrayList<String>();
+		arr.add("we");
+		arr.add("are");
+		arr.add("in");
+		arr.add("cybage");
+		
+	}
+	public void printMyList(ArrayList<String> arr)
+	{
+		synchronized (this) {
+			
+		
+		for (String s : arr) {
+			System.out.println(s);
+		}
+		}	
+	}
+}
+public class StringS {
+	public static void main(String[] args) {
+		ArrayList<String> arr=new ArrayList<String>();
+		arr.add("we");
+		arr.add("are");
+		arr.add("in");
+		arr.add("cybage");
+		
+		
+		
+	}
+
+}

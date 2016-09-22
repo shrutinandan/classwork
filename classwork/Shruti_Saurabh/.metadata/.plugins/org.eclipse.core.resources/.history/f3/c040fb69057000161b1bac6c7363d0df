@@ -1,0 +1,67 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+class MyString
+{
+	
+	 MyString()
+	{
+		ArrayList<String> arr=new ArrayList<String>();
+		arr.add("we");
+		arr.add("are");
+		arr.add("in");
+		arr.add("cybage");
+		printMyList(arr);
+		
+	}
+	public void printMyList(ArrayList<String> arr)
+	{
+		synchronized (this) {
+			
+		
+		for (String s : arr) {
+			System.out.println(s);
+		}
+		}	
+	}
+}
+class Thread1 extends Thread
+{
+	MyString m;
+
+	public Thread1(MyString t) {
+		
+		this.m = t;
+	}
+	 public void run()
+	 {
+	
+	       
+	
+	 }
+}
+
+class Thread2 extends Thread
+{
+	MyString m;
+
+	public Thread2(Table t) {
+		
+		this.n = t;
+	}
+	 public void run()
+	 {
+		 t.setNum(7);
+		 t.printTable();
+	 }
+	 
+}
+public class StringS {
+	public static void main(String[] args) {
+		MyString m1=new MyString();
+		
+		
+		
+	}
+
+}
